@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_service_description">Monitoring service that blocks access to YouTube and Instagram to restrict screen time.</string>
+    <string name="app_name">ParentalControlApp</string>
+    <style name="Theme.ParentalControlApp" parent="android:Theme.Material.Light.NoActionBar"/>
+</resources>

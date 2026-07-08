@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ParentalControlApp</string>
+    <string name="accessibility_service_description">Monitoring service that blocks access to YouTube and Instagram to restrict screen time.</string>
+</resources>
