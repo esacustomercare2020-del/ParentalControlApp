@@ -18,15 +18,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Setup Gradle Wrapper
-      run: npm install -g corepack && gradle wrapper
+    # This official tool sets up Gradle automatically even if your project is missing the wrapper files
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v4
 
     - name: Build Debug APK
-      run: ./gradlew assembleDebug
-
-    - name: Upload Finished APK
-      uses: actions/upload-artifact@v4
-      with:
-        name: parental-control-app-apk
-        path: app/build/outputs/apk/debug/app-debug.apk
-
+      run: gradle assembleDebug
